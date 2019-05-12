@@ -1,6 +1,6 @@
 ﻿# Copyright (c) Julian Cohen. All rights reserved.
 
-If ($args.Count > 0) {
+If ($args.Count -gt 0) {
     $gpm = Get-ProcessMitigation @args
 } else {
     $gpm = Get-ProcessMitigation -System
@@ -23,7 +23,7 @@ Switch ($gpm.CFG.Enable) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Green "On (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Green "On (default)";
         Break;
     }
     default {
@@ -43,7 +43,7 @@ Switch ($gpm.CFG.StrictControlFlowGuard) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -65,7 +65,7 @@ Switch ($gpm.CFG.SupressExports) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "? (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "? (default)";
         Break;
     }
     default {
@@ -88,7 +88,7 @@ Switch ($gpm.DEP.Enable) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Green "On (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Green "On (default)";
         Break;
     }
     default {
@@ -108,7 +108,7 @@ Switch ($gpm.DEP.EmulateAtlThunks) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -131,7 +131,7 @@ Switch ($gpm.ASLR.ForceRelocateImages) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -151,7 +151,7 @@ Switch ($gpm.ASLR.BottomUp) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Green "On (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Green "On (default)";
         Break;
     }
     default {
@@ -171,7 +171,7 @@ Switch ($gpm.ASLR.HighEntropy) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Green "On (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Green "On (default)";
         Break;
     }
     default {
@@ -194,7 +194,7 @@ Switch ($gpm.SEHOP.Enable) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Green "On (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Green "On (default)";
         Break;
     }
     default {
@@ -217,7 +217,7 @@ Switch ($gpm.Heap.TerminateOnError) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Green "On (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Green "On (default)";
         Break;
     }
     default {
@@ -240,7 +240,7 @@ Switch ($gpm.DynamicCode.BlockDynamicCode) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -260,7 +260,7 @@ Switch ($gpm.DynamicCode.AllowThreadsToOptOut) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -283,7 +283,7 @@ Switch ($gpm.ImageLoad.BlockLowLabelImageLoads) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -303,7 +303,7 @@ Switch ($gpm.ImageLoad.BlockRemoteImageLoads) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -323,7 +323,7 @@ Switch ($gpm.ImageLoad.PreferSystem32) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -346,7 +346,7 @@ Switch ($gpm.FontDisable.DisableNonSystemFonts) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -369,7 +369,7 @@ Switch ($gpm.BinarySignature.MicrosoftSignedOnly) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -389,7 +389,7 @@ Switch ($gpm.BinarySignature.AllowStoreSignedBinaries) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -409,7 +409,7 @@ Switch ($gpm.BinarySignature.EnforceModuleDependencySigning) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -432,7 +432,7 @@ Switch ($gpm.ExtensionPoint.DisableExtensionPoints) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -455,7 +455,7 @@ Switch ($gpm.SystemCall.DisableWin32kSystemCalls) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -478,7 +478,7 @@ Switch ($gpm.ChildProcess.DisallowChildProcessCreation) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -501,7 +501,7 @@ Switch ($gpm.Payload.EnableExportAddressFilter) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -521,7 +521,7 @@ Switch ($gpm.Payload.EnableExportAddressFilterPlus) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -541,7 +541,7 @@ Switch ($gpm.Payload.EnableImportAddressFilter) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -561,7 +561,7 @@ Switch ($gpm.Payload.EnableRopStackPivot) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -581,7 +581,7 @@ Switch ($gpm.Payload.EnableRopCallerCheck) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -601,7 +601,7 @@ Switch ($gpm.Payload.EnableRopSimExec) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
@@ -624,7 +624,7 @@ Switch ($gpm.StrictHandle.Enable) {
         Break;
     }
     "NOTSET" {
-        Write-Host -ForegroundColor White -BackgroundColor Red "Off (deafult)";
+        Write-Host -ForegroundColor White -BackgroundColor Red "Off (default)";
         Break;
     }
     default {
