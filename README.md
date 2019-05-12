@@ -8,6 +8,9 @@ Microsoft [deprecated EMET](https://support.microsoft.com/en-us/help/2458544/the
 now called [Windows Defender Exploit Guard](https://www.microsoft.com/security/blog/2017/10/23/windows-defender-exploit-guard-reduce-the-attack-surface-against-next-generation-malware/),
 into Windows 10.
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">In response to this, I plan on writing a tool that helps defensive teams enumerate the exploit mitigations available and enabled on their Windows devices so they can better understand their exploitation landscape and how useless the technologies are that bad vendors are selling.</p>&mdash; Julian Cohen (@HockeyInJune) <a href="https://twitter.com/HockeyInJune/status/1071506842600263680?ref_src=twsrc%5Etfw">December 8, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Use
 
 Run `Check-Security` with the same parameters you would use with `Get-ProcessMitigation`.
