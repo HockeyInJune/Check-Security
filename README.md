@@ -3,7 +3,7 @@
 Written in the style of [checksec.sh](https://www.trapkit.de/tools/checksec.html) for Linux.
 Check-Security is a simpler view of the current state of the exploit mitigation settings on your machine.
 
-Microsoft [deprecated EMET](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit)and added
+Microsoft [deprecated EMET](https://support.microsoft.com/en-us/help/2458544/the-enhanced-mitigation-experience-toolkit) and added
 [that exploit mitigation functionality](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard),
 now called [Windows Defender Exploit Guard](https://www.microsoft.com/security/blog/2017/10/23/windows-defender-exploit-guard-reduce-the-attack-surface-against-next-generation-malware/),
 into Windows 10.
